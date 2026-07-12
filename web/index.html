@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minesweeper</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="page">
+    <h1 class="title">💣 Minesweeper</h1>
+
+    <div class="difficulty-bar">
+      <button class="diff-btn active" data-level="beginner">Beginner</button>
+      <button class="diff-btn" data-level="intermediate">Intermediate</button>
+      <button class="diff-btn" data-level="expert">Expert</button>
+    </div>
+
+    <div class="cabinet" id="cabinet">
+      <div class="top-panel">
+        <div class="lcd" id="mine-counter">008</div>
+        <button class="face-btn" id="face-btn" aria-label="Reset game">🙂</button>
+        <div class="lcd" id="timer">000</div>
+      </div>
+
+      <div class="board-frame">
+        <div class="board" id="board"></div>
+      </div>
+    </div>
+
+    <p class="hint">Left click to reveal &nbsp;•&nbsp; Right click to flag &nbsp;•&nbsp; Click a number to chord</p>
+
+    <footer class="footer">Made for playing on your own time.</footer>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
